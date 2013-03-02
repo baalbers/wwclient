@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/gvsig-sensors/!svn/ver/1060/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data
+END
+WriteableIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/gvsig-sensors/!svn/ver/1024/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/WriteableIndex.java
+END
+FiltersHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/FiltersHelper.java
+END
+ObservationsIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/gvsig-sensors/!svn/ver/1060/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/ObservationsIterator.java
+END
+ObservationsInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/gvsig-sensors/!svn/ver/1060/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/ObservationsInputStream.java
+END
+WriteableObservation.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/gvsig-sensors/!svn/ver/700/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/WriteableObservation.java
+END
+CacheIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/gvsig-sensors/!svn/ver/1060/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/CacheIndex.java
+END
+ObservationsOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/gvsig-sensors/!svn/ver/1060/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/ObservationsOutputStream.java
+END
+InvalidParameterFilterHelperException.java
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/InvalidParameterFilterHelperException.java
+END
+ObservationsCacheIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/1060/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/ObservationsCacheIterator.java
+END
+RandomAccessStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/gvsig-sensors/!svn/ver/1060/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/data/RandomAccessStream.java
+END

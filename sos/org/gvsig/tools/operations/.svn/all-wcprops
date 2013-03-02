@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/operations
+END
+OperationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/operations/OperationException.java
+END
+Operation.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/operations/Operation.java
+END
+Operations.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/operations/Operations.java
+END
+AbstractOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/operations/AbstractOperation.java
+END
+OperationContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/operations/OperationContext.java
+END
+OperationNotSupportedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/operations/OperationNotSupportedException.java
+END
+OperationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/operations/OperationManager.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/gvsig-tools/!svn/ver/710/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/extensionpoint
+END
+ExtensionSingleton.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/extensionpoint/ExtensionSingleton.java
+END
+ExtensionPointManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/extensionpoint/ExtensionPointManager.java
+END
+ExtensionBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/extensionpoint/ExtensionBuilder.java
+END
+ExtensionPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/extensionpoint/ExtensionPoint.java
+END

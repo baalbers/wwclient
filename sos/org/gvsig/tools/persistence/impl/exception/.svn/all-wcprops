@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception
+END
+PersistenceInvalidPropertyNameException.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceInvalidPropertyNameException.java
+END
+PersistenceValidateMissingDefinitionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceValidateMissingDefinitionException.java
+END
+CantFindDefinitionInStreamException.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/gvsig-tools/!svn/ver/148/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/CantFindDefinitionInStreamException.java
+END
+ObjectNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/ObjectNotFoundException.java
+END
+PersistenceIllegalStateTheClassNameNotSetException.java
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceIllegalStateTheClassNameNotSetException.java
+END
+PersistenceInvalidDomainNameException.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceInvalidDomainNameException.java
+END
+PersistenceDomainNotRegisterdException.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceDomainNotRegisterdException.java
+END
+PersistenceUnsuportedMapKeyTypeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceUnsuportedMapKeyTypeException.java
+END
+PersistenceDuplicateDomainNameException.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceDuplicateDomainNameException.java
+END
+PersistenceInvalidTypeForPropertyException.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceInvalidTypeForPropertyException.java
+END
+PersistenceInvalidValidateModeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceInvalidValidateModeException.java
+END
+PersistenceIDNotLoadedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceIDNotLoadedException.java
+END
+PersistenceValueNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceValueNotFoundException.java
+END
+PersistenceReferenceIDConflitException.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/gvsig-tools/!svn/ver/74/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/exception/PersistenceReferenceIDConflitException.java
+END

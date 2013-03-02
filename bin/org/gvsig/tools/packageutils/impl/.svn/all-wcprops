@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gvsig-tools/!svn/ver/731/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl
+END
+DefaultDependency.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-tools/!svn/ver/720/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl/DefaultDependency.java
+END
+PackageInfoFileWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/gvsig-tools/!svn/ver/715/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl/PackageInfoFileWriter.java
+END
+PackageInfoTags.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/gvsig-tools/!svn/ver/715/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl/PackageInfoTags.java
+END
+DefaultVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/gvsig-tools/!svn/ver/718/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl/DefaultVersion.java
+END
+PackageInfoFileReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/gvsig-tools/!svn/ver/715/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl/PackageInfoFileReader.java
+END
+DefaultDependencies.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/gvsig-tools/!svn/ver/731/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl/DefaultDependencies.java
+END
+DefaultPackageManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/gvsig-tools/!svn/ver/715/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl/DefaultPackageManager.java
+END
+DefaultPackageInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/gvsig-tools/!svn/ver/724/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/packageutils/impl/DefaultPackageInfo.java
+END

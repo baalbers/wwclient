@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gvsig-tools/!svn/ver/277/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/spi
+END
+PersistenceManagerServices.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/spi/PersistenceManagerServices.java
+END
+PersistentIdentifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-tools/!svn/ver/73/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/spi/PersistentIdentifier.java
+END
+PersistentStateServices.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/spi/PersistentStateServices.java
+END
+PersistentContextServices.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/gvsig-tools/!svn/ver/277/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/spi/PersistentContextServices.java
+END

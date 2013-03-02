@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gvsig-tools/!svn/ver/639/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl
+END
+DelegatedContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/DelegatedContainer.java
+END
+AbstractPersistenceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/gvsig-tools/!svn/ver/639/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/AbstractPersistenceManager.java
+END
+DefaultFactories.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/gvsig-tools/!svn/ver/330/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/DefaultFactories.java
+END
+AbstractPersistentState.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/gvsig-tools/!svn/ver/330/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/AbstractPersistentState.java
+END
+SimplePersistenceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/gvsig-tools/!svn/ver/330/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/SimplePersistenceFactory.java
+END
+DefaultPersistentContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/gvsig-tools/!svn/ver/330/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/DefaultPersistentContext.java
+END
+DelegatedCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/DelegatedCollection.java
+END
+DelegatedList.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/DelegatedList.java
+END
+DelegatedSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/DelegatedSet.java
+END
+Domains.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/gvsig-tools/!svn/ver/73/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/Domains.java
+END
+DelegatedMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/DelegatedMap.java
+END
+DynObjectPersistenceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/gvsig-tools/!svn/ver/638/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/persistence/impl/DynObjectPersistenceFactory.java
+END

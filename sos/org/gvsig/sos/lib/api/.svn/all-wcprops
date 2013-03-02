@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gvsig-sensors/!svn/ver/1022/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.api/src/main/java/org/gvsig/sos/lib/api
+END
+SOSCommException.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/gvsig-sensors/!svn/ver/841/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.api/src/main/java/org/gvsig/sos/lib/api/SOSCommException.java
+END
+SOSManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/gvsig-sensors/!svn/ver/827/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.api/src/main/java/org/gvsig/sos/lib/api/SOSManager.java
+END
+SOSParserException.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/gvsig-sensors/!svn/ver/841/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.api/src/main/java/org/gvsig/sos/lib/api/SOSParserException.java
+END
+SOSException.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/gvsig-sensors/!svn/ver/841/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.api/src/main/java/org/gvsig/sos/lib/api/SOSException.java
+END
+SOSOperationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/gvsig-sensors/!svn/ver/996/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.api/src/main/java/org/gvsig/sos/lib/api/SOSOperationException.java
+END
+SOSLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/gvsig-sensors/!svn/ver/841/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.api/src/main/java/org/gvsig/sos/lib/api/SOSLocator.java
+END
+SWEException.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/gvsig-sensors/!svn/ver/841/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.api/src/main/java/org/gvsig/sos/lib/api/SWEException.java
+END

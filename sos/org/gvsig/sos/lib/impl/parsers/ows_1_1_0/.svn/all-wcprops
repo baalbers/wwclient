@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0
+END
+ExceptionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/ExceptionType.java
+END
+Element_ExceptionReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_ExceptionReport.java
+END
+KeywordsType.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/KeywordsType.java
+END
+Element_Operation.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_Operation.java
+END
+DomainType.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/DomainType.java
+END
+LanguageStringType.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/LanguageStringType.java
+END
+CodeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/CodeType.java
+END
+ValueType.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/ValueType.java
+END
+Element_DCP.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_DCP.java
+END
+Element_AllowedValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_AllowedValues.java
+END
+Element_ServiceIdentification.java
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_ServiceIdentification.java
+END
+Element_ServiceProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_ServiceProvider.java
+END
+TelephoneType.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/TelephoneType.java
+END
+AddressType.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/AddressType.java
+END
+Element_HTTP.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_HTTP.java
+END
+RequestMethodType.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/gvsig-sensors/!svn/ver/759/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/RequestMethodType.java
+END
+Element_OperationsMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_OperationsMetadata.java
+END
+Element_AnyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/gvsig-sensors/!svn/ver/759/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/Element_AnyValue.java
+END
+ContactType.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/ContactType.java
+END
+ResponsiblePartySubsetType.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/ResponsiblePartySubsetType.java
+END
+OnlineResourceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/gvsig-sensors/!svn/ver/835/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/OnlineResourceType.java
+END
+RangeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ows_1_1_0/RangeType.java
+END

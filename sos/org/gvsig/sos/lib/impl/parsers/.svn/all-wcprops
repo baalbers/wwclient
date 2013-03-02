@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/gvsig-sensors/!svn/ver/1061/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers
+END
+CapabilitiesParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/gvsig-sensors/!svn/ver/1061/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/CapabilitiesParser.java
+END
+DescribeSensorParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/DescribeSensorParser.java
+END
+GetObservationParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/gvsig-sensors/!svn/ver/1061/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/GetObservationParser.java
+END
+Coordinates.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/gvsig-sensors/!svn/ver/700/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/Coordinates.java
+END
+AnyTypeRealization.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/AnyTypeRealization.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-sensors/!svn/ver/700/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/Constants.java
+END
+SensorMLTagNameConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/SensorMLTagNameConstants.java
+END
+SOSInternalParserException.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/gvsig-sensors/!svn/ver/837/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/SOSInternalParserException.java
+END

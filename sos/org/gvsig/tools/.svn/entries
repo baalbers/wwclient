@@ -1,0 +1,156 @@
+10
+
+dir
+751
+https://devel.gvsig.org/svn/gvsig-tools/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools
+https://devel.gvsig.org/svn/gvsig-tools
+
+
+
+2013-02-07T11:38:17.873325Z
+731
+jldominguez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6ccf339c-c873-448b-8983-cdffe52ea628
+
+i18n
+dir
+
+lang
+dir
+
+dynobject
+dir
+
+operations
+dir
+
+persistence
+dir
+
+extensionpoint
+dir
+
+observer
+dir
+
+exception
+dir
+
+dataTypes
+dir
+
+visitor
+dir
+
+service
+dir
+
+evaluator
+dir
+
+task
+dir
+
+locator
+dir
+
+library
+dir
+
+ToolsLocator.java
+file
+
+
+
+
+2013-02-20T13:34:29.000000Z
+f587906cdfa9ed895326dd42608e391d
+2012-10-17T08:50:41.308223Z
+715
+jjdelcerro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13728
+
+paging
+dir
+
+undo
+dir
+
+ToolsLibrary.java
+file
+
+
+
+
+2013-02-20T13:34:29.000000Z
+19b357032f38ab437587c7bf994b36ce
+2012-10-17T08:50:41.308223Z
+715
+jjdelcerro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2564
+
+dispose
+dir
+
+packageutils
+dir
+
+util
+dir
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/gvsig-tools/!svn/ver/592/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/exception
+END
+IBaseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/exception/IBaseException.java
+END
+BaseExceptionIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/gvsig-tools/!svn/ver/337/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/exception/BaseExceptionIterator.java
+END
+ListBaseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/gvsig-tools/!svn/ver/279/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/exception/ListBaseException.java
+END
+NotYetImplemented.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/exception/NotYetImplemented.java
+END
+ExceptionTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/exception/ExceptionTranslator.java
+END
+BaseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/gvsig-tools/!svn/ver/592/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/exception/BaseException.java
+END
+BaseRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/gvsig-tools/!svn/ver/337/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/exception/BaseRuntimeException.java
+END

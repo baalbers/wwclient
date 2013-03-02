@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation
+END
+Offering.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/Offering.java
+END
+ResultModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/ResultModel.java
+END
+EventTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/EventTime.java
+END
+ResponseMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/ResponseMode.java
+END
+SpatialFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/SpatialFilter.java
+END
+FeatureOfInterestComponents.java
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/FeatureOfInterestComponents.java
+END
+ResponseFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/ResponseFormat.java
+END
+GetObservationsTagNameConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/GetObservationsTagNameConstants.java
+END
+DefaultSpatialFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/DefaultSpatialFilter.java
+END
+ObservedProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/ObservedProperty.java
+END
+Result.java
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/Result.java
+END
+ComparisonFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/ComparisonFilter.java
+END
+ObjectID.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/ObjectID.java
+END
+DefaultComparisonFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/DefaultComparisonFilter.java
+END
+AbstractObservationRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/AbstractObservationRequest.java
+END
+Procedure.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/Procedure.java
+END
+AbstractFeatureOfInterestComponents.java
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/AbstractFeatureOfInterestComponents.java
+END
+TemporalFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/TemporalFilter.java
+END
+GetObservation.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/GetObservation.java
+END
+FeatureOfInterest.java
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/FeatureOfInterest.java
+END
+DefaultTemporalFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/DefaultTemporalFilter.java
+END

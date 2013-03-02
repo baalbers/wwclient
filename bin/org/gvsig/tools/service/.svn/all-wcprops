@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/gvsig-tools/!svn/ver/707/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service
+END
+ServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service/ServiceException.java
+END
+Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gvsig-tools/!svn/ver/69/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service/Service.java
+END
+AbstractService.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/gvsig-tools/!svn/ver/69/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service/AbstractService.java
+END
+AbstractPersistentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/gvsig-tools/!svn/ver/109/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service/AbstractPersistentService.java
+END
+ServiceInitializationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service/ServiceInitializationException.java
+END
+Manager.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service/Manager.java
+END
+AbstractMultiServiceImplManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/gvsig-tools/!svn/ver/280/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service/AbstractMultiServiceImplManager.java
+END
+AbstractManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/service/AbstractManager.java
+END

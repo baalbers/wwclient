@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/gvsig-tools/!svn/ver/728/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion
+END
+CoerceToDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/gvsig-tools/!svn/ver/602/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToDate.java
+END
+CoerceToFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/gvsig-tools/!svn/ver/112/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToFile.java
+END
+CoerceToBoolean.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/gvsig-tools/!svn/ver/112/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToBoolean.java
+END
+CoerceToInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-tools/!svn/ver/602/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToInt.java
+END
+CoerceToDateTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/gvsig-tools/!svn/ver/602/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToDateTime.java
+END
+CoerceToTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/gvsig-tools/!svn/ver/602/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToTime.java
+END
+CoerceToURI.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToURI.java
+END
+CoerceToLong.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/gvsig-tools/!svn/ver/144/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToLong.java
+END
+AbstractCoerceToDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/gvsig-tools/!svn/ver/602/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/AbstractCoerceToDate.java
+END
+CoerceToURL.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-tools/!svn/ver/220/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToURL.java
+END
+CoerceToTimestamp.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/gvsig-tools/!svn/ver/728/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToTimestamp.java
+END
+CoerceToByte.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/gvsig-tools/!svn/ver/602/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToByte.java
+END
+CoerceToFloat.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/gvsig-tools/!svn/ver/602/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToFloat.java
+END
+CoerceToString.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/gvsig-tools/!svn/ver/112/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToString.java
+END
+CoerceToDouble.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/gvsig-tools/!svn/ver/144/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/impl/coercion/CoerceToDouble.java
+END

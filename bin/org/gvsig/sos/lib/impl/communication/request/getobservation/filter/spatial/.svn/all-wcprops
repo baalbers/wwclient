@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial
+END
+DefaultSpatialBinaryOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/DefaultSpatialBinaryOperator.java
+END
+DefaultSpatialDistanceBufferOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 237
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/DefaultSpatialDistanceBufferOperator.java
+END
+SpatialDistanceOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/SpatialDistanceOperator.java
+END
+SpatialFilterOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/SpatialFilterOperation.java
+END
+GeometryOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/GeometryOperator.java
+END
+SpatialEnvelopeOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/SpatialEnvelopeOperator.java
+END
+AbstractSpatialFilterOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/AbstractSpatialFilterOperation.java
+END
+DefaultSpatialDistanceOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/DefaultSpatialDistanceOperator.java
+END
+AbstractGeometryOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn/gvsig-sensors/!svn/ver/836/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/AbstractGeometryOperator.java
+END
+DefaultSpatialEnvelopeOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/gvsig-sensors/!svn/ver/700/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/DefaultSpatialEnvelopeOperator.java
+END
+SpatialBinaryOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/SpatialBinaryOperator.java
+END
+SpatialDistanceBufferOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn/gvsig-sensors/!svn/ver/597/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/request/getobservation/filter/spatial/SpatialDistanceBufferOperator.java
+END

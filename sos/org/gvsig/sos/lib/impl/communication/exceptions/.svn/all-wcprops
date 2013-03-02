@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/exceptions
+END
+SOSInternalException.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/exceptions/SOSInternalException.java
+END
+OMNotsupportedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn/gvsig-sensors/!svn/ver/624/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/communication/exceptions/OMNotsupportedException.java
+END

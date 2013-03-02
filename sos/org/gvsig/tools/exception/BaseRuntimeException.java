@@ -1,0 +1,319 @@
+/* gvSIG. Geographic Information System of the Valencian Government
+ *
+ * Copyright (C) 2007-2008 Infrastructures and Transports Department
+ * of the Valencian Government (CIT)
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA  02110-1301, USA.
+ *
+ */
+
+/*
+ * AUTHORS (In addition to CIT):
+ */
+package org.gvsig.tools.exception;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+/**
+ * 
+ * Esta clase esta pensada para actuar como clase base para las excepciones que
+ * se lanzan dentro del proyecto de gvSIG.
+ * 
+ * Añade la implementacion necesaria para disponer de mensajes de error
+ * internacionalizables, a traves del metodo getLocalizedMessage, asi como una
+ * serie de metodos que nos permiten obtener los mesanes de error de la cadena
+ * de excepciones enlazadas a traves de su "causa", asi como utilidades que
+ * permitan recorrer de forma comoda esta cadena de excepciones por medio de un
+ * Iterador.
+ * 
+ * TODO: extract common code with the {@link BaseException} class to a common
+ * helper
+ * 
+ * @author Equipo de desarrollo de gvSIG.
+ * 
+ */
+public abstract class BaseRuntimeException extends RuntimeException implements IBaseException {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2872163082105463370L;
+
+	protected String messageKey;
+
+	/**
+	 * TODO: remove the variable, use the Exception get/setMessage() instead.
+	 */
+	protected String formatString;
+
+	/**
+	 * Unique code of error.
+	 */
+	protected long code;
+	private Map values;
+
+    public BaseRuntimeException(BaseException exception) {
+    	super(exception);
+    }
+
+	/**
+	 * Constructs a BaseException with a default message format, a key to find a
+	 * localized message format, and a unique code to identify the exception.
+	 * 
+	 * @param message
+	 *            the default messageFormat to describe the exception
+	 * @param key
+	 *            the key to use to search a localized messageFormnata
+	 * @param code
+	 *            the unique code to identify the exception
+	 */
+	public BaseRuntimeException(String message, String key, long code) {
+		super(message);
+		this.values = null;
+		this.formatString = message;
+		this.messageKey = key;
+		this.code = code;
+	}
+
+	/**
+	 * Constructs a BaseException with a default message format, a key to find a
+	 * localized message format, and a unique code to identify the exception.
+	 * 
+	 * @param message
+	 *            the default messageFormat to describe the exception
+	 * @param cause
+	 *            the original cause of the exception
+	 * @param key
+	 *            the key to use to search a localized messageFormnata
+	 * @param code
+	 *            the unique code to identify the exception
+	 */
+	public BaseRuntimeException(String message, Throwable cause, String key, long code) {
+		super(message, cause);
+		this.formatString = message;
+		this.messageKey = key;
+		this.code = code;
+	}
+
+	/**
+	 * Returns the format string received in the parameter with its keys
+	 * replaced with the corresponding values of the map.
+	 * 
+	 * @param formatString
+	 * @param values
+	 *            map
+	 * @return string formatted
+	 */
+	private String format(String formatString, Map values) {
+		if (values != null) {
+
+			// If there is no message format, create a text with the values.
+			if (formatString == null) {
+				return "values = ".concat(values.toString());
+			} else {
+				// Replace the keys as variables with the values in the Map
+				Iterator keys = values.keySet().iterator();
+				String message = formatString;
+				while (keys.hasNext()) {
+					String key = (String) keys.next();
+					Object value = values.get(key);
+					message = replaceVariable(message, key, value == null ? ""
+							: value.toString());
+				}
+				return message;
+			}
+		}
+		// Return the original format message in any other case
+		return formatString;
+	}
+
+	/**
+	 * Method to replace message variables, not using the new String.replaceAll
+	 * method for Java ME CDC Compatibility.
+	 */
+	private String replaceVariable(String text, String varName,
+			String replacementString) {
+		String searchString = "%(".concat(varName).concat(")");
+		StringBuffer sBuffer = new StringBuffer();
+		int pos = 0;
+		while ((pos = text.indexOf(searchString)) != -1) {
+			sBuffer.append(text.substring(0, pos) + replacementString);
+			text = text.substring(pos + searchString.length());
+		}
+		sBuffer.append(text);
+		return sBuffer.toString();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Throwable#getMessage()
+	 */
+	public String getMessage() {
+		return format(this.formatString, values());
+	}
+
+	public String getMessage(int indent) {
+		return BaseException.insertBlanksAtStart(
+				format(formatString, values()), indent);
+	}
+
+	public String getLocalizedMessage() {
+		return getLocalizedMessage(BaseException.translator, 0);
+	}
+
+	public String getLocalizedMessage(ExceptionTranslator translator, int indent) {
+
+		String fmt;
+		if (translator == null) {
+			translator = BaseException.translator;
+		}
+		if (translator == null) {
+			fmt = getFormatString();
+		} else {
+			fmt = getMessageKey();
+			if (fmt == null) {
+				fmt = getFormatString();
+			} else {
+				fmt = translator.getText(fmt);
+			}
+		}
+		return BaseException.insertBlanksAtStart(format(fmt, values()), indent);
+	}
+
+	public String getMessageStack() {
+		return getMessageStack(0);
+	}
+
+	public String getMessageStack(int indent) {
+		Iterator iter = this.iterator();
+		StringBuffer msgBuffer = new StringBuffer();
+		int i = 1;
+//		msgBuffer.append(this.getMessage(indent));
+		while (iter.hasNext()) {
+			Throwable ex = ((Throwable) iter.next());
+
+			if (msgBuffer.length() > 0) {
+				msgBuffer.append("\n");
+			}
+
+			if (ex instanceof IBaseException) {
+				IBaseException bex = (IBaseException) ex;
+				 msgBuffer.append(bex.getMessage(indent * i));
+			} else {
+				msgBuffer.append(BaseException.insertBlanksAtStart(
+						ex.getMessage(), indent
+						* i));
+			}
+
+			i++;
+		}
+		return msgBuffer.toString();
+	}
+
+	public String getLocalizedMessageStack() {
+		return getLocalizedMessageStack(BaseException.translator, 0);
+	}
+
+	public String getLocalizedMessageStack(ExceptionTranslator translator,
+			int indent) {
+		Iterator iter = this.iterator();
+		StringBuffer msgBuffer = new StringBuffer();
+		// msgBuffer.append(this.getLocalizedMessage());
+		Exception ex;
+		while (iter.hasNext()) {
+			ex = ((Exception) iter.next());
+			if (msgBuffer.length() > 0) {
+				msgBuffer.append("\n");
+			}
+
+			if (ex instanceof IBaseException) {
+				IBaseException bex = (IBaseException) ex;
+				msgBuffer.append(bex.getLocalizedMessage(translator, indent));
+			} else {
+				msgBuffer.append(ex.getLocalizedMessage());
+			}
+		}
+		return msgBuffer.toString();
+	}
+
+	public long getCode() {
+		return this.code;
+	}
+
+	/**
+	 * Sets the exception's code.
+	 */
+	public void setCode(long code) {
+		this.code = code;
+	}
+
+	public String getFormatString() {
+		return this.formatString;
+	}
+
+	/**
+	 * Sets the format string.
+	 * 
+	 * @param formatString
+	 */
+	public void setFormatString(String formatString) {
+		this.formatString = formatString;
+	}
+
+	public String getMessageKey() {
+		return this.messageKey;
+	}
+
+	/**
+	 * Sets the property messageKey.
+	 * 
+	 * @param messageKey
+	 */
+	public void setMessageKey(String messageKey) {
+		this.messageKey = messageKey;
+	}
+
+	public Iterator iterator() {
+		return new BaseExceptionIterator(this);
+	}
+
+	/**
+	 * @return A map that serves to replace in the format string the keys with
+	 *         the corresponding values.
+	 */
+	protected Map values() {
+		if (values == null) {
+			values = new HashMap();
+		}
+		return values;
+	}
+
+	protected void setValue(String name, Object value) {
+		if (values == null) {
+			values = new HashMap();
+		}
+		values.put(name, value);
+	}
+
+	public String toString() {
+		return format(this.formatString, values());
+	}
+
+
+
+}

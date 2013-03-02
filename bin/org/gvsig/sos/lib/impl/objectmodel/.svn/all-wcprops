@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/gvsig-sensors/!svn/ver/1063/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/Utils.java
+END
+DefaultSOSResponseFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultSOSResponseFormat.java
+END
+MutableProcedure.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/gvsig-sensors/!svn/ver/700/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/MutableProcedure.java
+END
+DefaultFeatureOfInterest.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/gvsig-sensors/!svn/ver/1024/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultFeatureOfInterest.java
+END
+MutableFeatureOfInterest.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/gvsig-sensors/!svn/ver/700/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/MutableFeatureOfInterest.java
+END
+DefaultSOSObservedProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/gvsig-sensors/!svn/ver/837/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultSOSObservedProperty.java
+END
+DefaultSOSClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultSOSClient.java
+END
+MutableOffering.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/gvsig-sensors/!svn/ver/700/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/MutableOffering.java
+END
+DefaultSOSBasic.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/gvsig-sensors/!svn/ver/837/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultSOSBasic.java
+END
+MutableSOSClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/gvsig-sensors/!svn/ver/789/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/MutableSOSClient.java
+END
+DefaultServiceProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/gvsig-sensors/!svn/ver/624/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultServiceProvider.java
+END
+DefaultSOSProcedure.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/gvsig-sensors/!svn/ver/1061/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultSOSProcedure.java
+END
+MutableObservedProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/gvsig-sensors/!svn/ver/700/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/MutableObservedProperty.java
+END
+DefaultSOSOffering.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/1063/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultSOSOffering.java
+END
+DefaultSOSTimePeriod.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/gvsig-sensors/!svn/ver/624/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultSOSTimePeriod.java
+END
+DefaultObservationValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/gvsig-sensors/!svn/ver/999/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/objectmodel/DefaultObservationValue.java
+END

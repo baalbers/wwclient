@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/gvsig-tools/!svn/ver/619/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator
+END
+EvaluatorFieldValueMatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/EvaluatorFieldValueMatch.java
+END
+EvaluatorFieldValueRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/EvaluatorFieldValueRange.java
+END
+EvaluatorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/EvaluatorException.java
+END
+Evaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/gvsig-tools/!svn/ver/193/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/Evaluator.java
+END
+EvaluatorFieldValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/EvaluatorFieldValue.java
+END
+AndEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/gvsig-tools/!svn/ver/488/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/AndEvaluator.java
+END
+EvaluatorFieldValueNearest.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/EvaluatorFieldValueNearest.java
+END
+EvaluatorFieldsInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/gvsig-tools/!svn/ver/619/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/EvaluatorFieldsInfo.java
+END
+AbstractEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/gvsig-tools/!svn/ver/193/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/AbstractEvaluator.java
+END
+EvaluatorData.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/evaluator/EvaluatorData.java
+END

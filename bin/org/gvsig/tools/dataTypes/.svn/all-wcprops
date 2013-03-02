@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/gvsig-tools/!svn/ver/728/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes
+END
+CoercionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/gvsig-tools/!svn/ver/187/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/CoercionException.java
+END
+DataTypesManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/gvsig-tools/!svn/ver/697/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/DataTypesManager.java
+END
+DataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/gvsig-tools/!svn/ver/697/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/DataType.java
+END
+DataTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/gvsig-tools/!svn/ver/714/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dataTypes/DataTypes.java
+END

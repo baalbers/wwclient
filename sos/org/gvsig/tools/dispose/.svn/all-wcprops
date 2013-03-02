@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/gvsig-tools/!svn/ver/418/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose
+END
+DisposableIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/DisposableIterator.java
+END
+DisposableManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/gvsig-tools/!svn/ver/417/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/DisposableManager.java
+END
+DisposableInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/gvsig-tools/!svn/ver/417/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/DisposableInfo.java
+END
+Disposable.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/Disposable.java
+END
+DisposeUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/gvsig-tools/!svn/ver/19/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/DisposeUtils.java
+END

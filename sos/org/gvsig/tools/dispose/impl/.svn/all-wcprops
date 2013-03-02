@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/gvsig-tools/!svn/ver/418/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/impl
+END
+DefaultDisposableManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/gvsig-tools/!svn/ver/418/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/impl/DefaultDisposableManager.java
+END
+DefaultDisposableInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/gvsig-tools/!svn/ver/417/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/impl/DefaultDisposableInfo.java
+END
+AbstractDisposable.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/gvsig-tools/!svn/ver/417/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/dispose/impl/AbstractDisposable.java
+END

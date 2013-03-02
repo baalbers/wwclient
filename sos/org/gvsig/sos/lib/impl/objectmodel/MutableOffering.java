@@ -1,0 +1,46 @@
+package org.gvsig.sos.lib.impl.objectmodel;
+
+import java.util.List;
+
+//import org.gvsig.fmap.geom.primitive.Envelope;
+import org.gvsig.sos.lib.api.client.ObservedProperty;
+import org.gvsig.sos.lib.api.client.Offering;
+import org.gvsig.sos.lib.api.client.Procedure;
+import org.gvsig.timesupport.Time;
+
+import com.vividsolutions.jts.geom.Envelope;
+
+public interface MutableOffering extends Offering{
+	 /**
+	    * Sets the name associated to this offering.	
+	    */
+	   public void setName(String name);
+	   
+	   /**
+	    * Sets the identifier of this offering.
+	    */
+	   public void setIdentifier(String identifier);
+	    
+
+	   /**
+	    * Returns the location of this offering. Usually an envelope surrounding the observations 
+	    * locations. 
+	    */
+	   public void setLocation(Envelope location);
+
+	   /**
+	    * Sets the time period of the observations present in the offering.
+	    */
+	   public void setTime(Time time); 
+	   
+	   /**
+	    * Sets the list of the procedures involved in this offering.
+	    */
+	   public void setProcedures(List<Procedure> procedures);
+	   
+	   /**
+	    * Sets the observed properties present in this offering.
+	    */
+	   public void setObservedProperties(List<ObservedProperty> observedProperties);
+	   
+}

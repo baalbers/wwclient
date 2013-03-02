@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc
+END
+Scalar_CapabilitiesType.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/Scalar_CapabilitiesType.java
+END
+TemporalOperandsType.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/TemporalOperandsType.java
+END
+TemporalOperatorType.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/TemporalOperatorType.java
+END
+Element_LogicalOperators.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/gvsig-sensors/!svn/ver/759/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/Element_LogicalOperators.java
+END
+TemporalOperatorsType.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/TemporalOperatorsType.java
+END
+Id_CapabilitiesType.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/Id_CapabilitiesType.java
+END
+Spatial_CapabilitiesType.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/Spatial_CapabilitiesType.java
+END
+GeometryOperandsType.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/GeometryOperandsType.java
+END
+Element_EID.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/gvsig-sensors/!svn/ver/759/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/Element_EID.java
+END
+ComparisonOperatorsType.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/ComparisonOperatorsType.java
+END
+Element_FID.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/gvsig-sensors/!svn/ver/759/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/Element_FID.java
+END
+SpatialOperatorType.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/SpatialOperatorType.java
+END
+SpatialOperatorsType.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/SpatialOperatorsType.java
+END
+Temporal_CapabilitiesType.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/ogc/Temporal_CapabilitiesType.java
+END

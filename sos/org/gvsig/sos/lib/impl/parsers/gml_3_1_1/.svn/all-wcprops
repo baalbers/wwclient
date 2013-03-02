@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1
+END
+ReferenceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/835/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/ReferenceType.java
+END
+TimeUnitType.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/TimeUnitType.java
+END
+TimeInstantType.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/TimeInstantType.java
+END
+DirectPositionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/DirectPositionType.java
+END
+FeaturePropertyType.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/FeaturePropertyType.java
+END
+stringOrNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/stringOrNull.java
+END
+TimeInterval.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/TimeInterval.java
+END
+TimePeriodType.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/TimePeriodType.java
+END
+StringOrRefType.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/StringOrRefType.java
+END
+doubleOrNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/doubleOrNull.java
+END
+FeatureCollectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/FeatureCollectionType.java
+END
+booleanOrNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/booleanOrNull.java
+END
+NullType.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/NullType.java
+END
+NameOrNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/NameOrNull.java
+END
+CoordinatesType.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/CoordinatesType.java
+END
+CodeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/CodeType.java
+END
+EnvelopeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/EnvelopeType.java
+END
+NullEnumeration.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/NullEnumeration.java
+END
+TimePositionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/TimePositionType.java
+END
+MetaDataPropertyType.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/MetaDataPropertyType.java
+END
+BoundingShapeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/BoundingShapeType.java
+END
+integerOrNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/integerOrNull.java
+END
+PointType.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/gvsig-sensors/!svn/ver/1023/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/PointType.java
+END
+Inner_Attribute_direction.java
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/gvsig-sensors/!svn/ver/907/org.gvsig.sos/trunk/org.gvsig.sos/org.gvsig.sos.lib/org.gvsig.sos.lib.impl/src/main/java/org/gvsig/sos/lib/impl/parsers/gml_3_1_1/Inner_Attribute_direction.java
+END

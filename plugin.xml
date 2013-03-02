@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="wwclient.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="wwclient.Perspective"
+            id="wwclient.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="wwclient.views.WFSView"
+            id="wwclient.WFSView"
+            name="WFSView"
+            restorable="true">
+      </view>
+      <view
+            class="wwclient.views.ControlsView"
+            id="wwclient.ControlsView"
+            name="ControlsView"
+            restorable="true">
+      </view>
+      <view
+            class="wwclient.views.WorldViewPart"
+            id="wwclient.WorldViewPart"
+            name="WorldViewPart"
+            restorable="true">
+      </view>
+      <view
+            class="wwclient.views.AddXMLDataView"
+            id="wwclient.AddXMLDataView"
+            name="AddXMLDataView"
+            restorable="true">
+      </view>
+      <view
+            class="wwclient.views.SOSView"
+            id="wwclient.SOSView"
+            name="SOSView"
+            restorable="true">
+      </view>
+      <view
+            class="wwclient.views.GeoTifView"
+            id="wwclient.GeoTifView"
+            name="GeoTifView"
+            restorable="true">
+      </view>
+      <view
+            class="wwclient.views.WorldWindAWTViewPart"
+            id="wwclient.WorldWindAWTViewPart"
+            name="WorldWindAWTViewPart"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

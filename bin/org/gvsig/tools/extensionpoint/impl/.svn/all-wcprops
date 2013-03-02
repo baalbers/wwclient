@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gvsig-tools/!svn/ver/710/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/extensionpoint/impl
+END
+DefaultExtensionPointManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/gvsig-tools/!svn/ver/111/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/extensionpoint/impl/DefaultExtensionPointManager.java
+END
+DefaultExtensionPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/gvsig-tools/!svn/ver/710/org.gvsig.tools/library/trunk/org.gvsig.tools/org.gvsig.tools.lib/src/main/java/org/gvsig/tools/extensionpoint/impl/DefaultExtensionPoint.java
+END
