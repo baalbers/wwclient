@@ -17,4 +17,5 @@ Bundle-ClassPath: .,
  lib/gluegen-rt.jar,
  lib/worldwindx.jar,
  lib/plugin.jar,
- lib/gdal.jar
+ lib/gdal.jar,
+ swt-grouplayout.jar

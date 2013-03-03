@@ -51,7 +51,8 @@ public class GeoTiffParser {
 		System.out.println("extremes[1]: "+extremes[1]);
 		System.out.println("test: "+5e3);
 		surface.setVerticalScale(1000);//5e3
-		surface.setAltitudeMode(WorldWind.RELATIVE_TO_GROUND);
+//		surface.setAltitudeMode(WorldWind.RELATIVE_TO_GROUND);
+		surface.setAltitudeMode( (Integer) outLayer.getValue("AltitudeModel") );
 		//        surface.setAltitude();
 
 		AnalyticSurfaceAttributes attr = new AnalyticSurfaceAttributes();

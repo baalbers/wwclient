@@ -3,12 +3,12 @@ package wwclient.views;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
+import wwclient.Activator;
+import wwclient.utils.*;
+import wwclient.utils.geotiff.*;
+import gov.nasa.worldwind.WorldWind;
 import gov.nasa.worldwind.layers.LayerList;
-import gov.nasa.worldwind.layers.RenderableLayer;
-
 import org.eclipse.jface.viewers.CheckStateChangedEvent;
 import org.eclipse.jface.viewers.CheckboxTableViewer;
 import org.eclipse.jface.viewers.ICheckStateListener;
@@ -35,10 +35,8 @@ import org.eclipse.ui.forms.widgets.TableWrapData;
 import org.eclipse.ui.forms.widgets.TableWrapLayout;
 import org.eclipse.ui.part.ViewPart;
 
-import wwclient.Activator;
-import wwclient.utils.TimeLoopOverlay;
-import wwclient.utils.TimeSeriesLayer;
-import wwclient.utils.geotiff.GeoTiffParser;
+import wwclient.views.WorldWindAWTViewPart;
+
 
 public class GeoTifView extends ViewPart {
 
@@ -53,23 +51,26 @@ public class GeoTifView extends ViewPart {
 
 	private Section sctnGetGeoTif;
 	private Text txtGeoTiffsurl;
-	
-	private Scale scale;		// scale to navigate between the timeseries layer
+
+	private Combo comboAltitudeModel;
+	private int altitudeModel;		// holds the selected AltitudeModel for the loaded Layer
+
+	private Scale scale;			// scale to navigate between the timeseries layer
 	private Label lblSelectLayer;	// shows the selected TimeseriesLayer
 	// animation stuff
 	private Button btnAnimate;
 	private Combo comboSpeed;
 	private boolean animate = false;
 	private TimeLoopOverlay overlay;
-	
+
 
 	public void createPartControl(Composite parent) {
 		formToolkit = new FormToolkit(parent.getDisplay());
 		form = formToolkit.createScrolledForm(parent);
 		TableWrapLayout layout = new TableWrapLayout();
 		form.getBody().setLayout(layout);
-		
-		
+
+
 		worldview = (WorldWindAWTViewPart) Activator.getView(getViewSite().getWorkbenchWindow(), WorldWindAWTViewPart.ID);
 
 		/**
@@ -79,19 +80,17 @@ public class GeoTifView extends ViewPart {
 		sctnGetGeoTif.setLayoutData(new TableWrapData(TableWrapData.FILL_GRAB, TableWrapData.TOP, 1, 1));
 		formToolkit.paintBordersFor(sctnGetGeoTif);
 		sctnGetGeoTif.setText("Load GeoTiff as Layer");
-		
-		Composite compositeWFS = formToolkit.createComposite(sctnGetGeoTif, SWT.NONE);
-		sctnGetGeoTif.setClient(compositeWFS);
-		compositeWFS.setLayout(new GridLayout(2, false));
-	
-		txtGeoTiffsurl = formToolkit.createText(compositeWFS, "", SWT.LEFT);
-		txtGeoTiffsurl.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, true, false, 1, 1));
-		txtGeoTiffsurl.setText("/home/bastian/java/data/geotiff/prec01_16_germany.tif");
-		new Label(compositeWFS, SWT.NONE);
-//		txtGeoTiffsurl.setText("/Volumes/Macintosh HD/Users/bastian/Desktop/wfs/prec_16_tif/prec_12_16_ger.tif");
 
-		Button btnGetCap = formToolkit.createButton(compositeWFS, "Load as Layer", SWT.CENTER);
-		btnGetCap.setLayoutData(new GridData(SWT.LEFT, SWT.TOP, false, false, 1, 1));
+		Composite compositeGeoTiff = formToolkit.createComposite(sctnGetGeoTif, SWT.NONE);
+		sctnGetGeoTif.setClient(compositeGeoTiff);
+		compositeGeoTiff.setLayout(new GridLayout(3, false));
+
+		txtGeoTiffsurl = formToolkit.createText(compositeGeoTiff, "", SWT.LEFT);
+		txtGeoTiffsurl.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 3, 1));
+		txtGeoTiffsurl.setText("/home/bastian/java/data/geotiff/prec01_16_germany.tif");
+		//		txtGeoTiffsurl.setText("/Volumes/Macintosh HD/Users/bastian/Desktop/wfs/prec_16_tif/prec_12_16_ger.tif");
+
+		Button btnGetCap = formToolkit.createButton(compositeGeoTiff, "Load as Layer", SWT.CENTER);
 		btnGetCap.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent event) {
 				loadButtonClicked();
@@ -100,8 +99,8 @@ public class GeoTifView extends ViewPart {
 				loadButtonClicked();
 			}
 		});
-		
-		Button btnLoadFolder = new Button(compositeWFS, SWT.NONE);
+
+		Button btnLoadFolder = new Button(compositeGeoTiff, SWT.NONE);
 		formToolkit.adapt(btnLoadFolder, true, true);
 		btnLoadFolder.setText("Load Folder");
 		btnLoadFolder.addSelectionListener(new SelectionAdapter() {
@@ -112,7 +111,39 @@ public class GeoTifView extends ViewPart {
 				loadFolderButtonClicked();
 			}
 		});
-		
+		new Label(compositeGeoTiff, SWT.NONE);
+
+		Label lblAltitudeModel = new Label(compositeGeoTiff, SWT.NONE);
+		formToolkit.adapt(lblAltitudeModel, true, true);
+		lblAltitudeModel.setText("Altitude Model:");
+
+		comboAltitudeModel = new Combo(compositeGeoTiff, SWT.NONE);
+		comboAltitudeModel.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		formToolkit.adapt(comboAltitudeModel);
+		formToolkit.paintBordersFor(comboAltitudeModel);
+		// These are the possible Altitude Models for Layer
+		comboAltitudeModel.add("CLAMP_TO_GROUND");
+		comboAltitudeModel.add("RELATIVE_TO_GROUND");
+		comboAltitudeModel.add("ABSOLUTE");
+		comboAltitudeModel.addSelectionListener(new SelectionAdapter() {
+			public void widgetSelected(SelectionEvent e) {
+				int selection = comboAltitudeModel.getSelectionIndex();
+
+				switch (selection) {
+				case 0:  altitudeModel = WorldWind.CLAMP_TO_GROUND;
+				break;
+				case 1: altitudeModel = WorldWind.RELATIVE_TO_GROUND;
+				break;
+				case 2: altitudeModel = WorldWind.ABSOLUTE;
+				break;
+				default: altitudeModel = WorldWind.RELATIVE_TO_GROUND;
+				break;
+				}
+			}
+		});
+		comboAltitudeModel.select(1);
+		new Label(compositeGeoTiff, SWT.NONE);
+
 		/**
 		 * 
 		 *  Section --- Layer Manager ---
@@ -144,7 +175,7 @@ public class GeoTifView extends ViewPart {
 				worldview.repaint();
 			}
 		});
-		
+
 		/***
 		 *  
 		 *  Section Timeseries controls (Navigation etc.)
@@ -176,7 +207,6 @@ public class GeoTifView extends ViewPart {
 		lblSelectLayer.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
 		new Label(compositeControls, SWT.NONE);
 
-		//		new Label(compositeControls, SWT.NONE);
 
 		scale = new Scale(compositeControls, SWT.FILL);
 		scale.setLayoutData(new GridData(SWT.FILL, SWT.BOTTOM, true, false, 1, 1));
@@ -223,7 +253,7 @@ public class GeoTifView extends ViewPart {
 
 		Composite compositeOptions = formToolkit.createComposite(sctnOptions, SWT.NONE);
 		sctnOptions.setClient(compositeOptions);
-		compositeOptions.setLayout(new GridLayout(3, false));
+		compositeOptions.setLayout(new GridLayout(2, false));
 
 		Label lblAnimationSpeed = formToolkit.createLabel(compositeOptions, "", SWT.NONE);
 		lblAnimationSpeed.setText("Animation Speed: ");
@@ -240,42 +270,45 @@ public class GeoTifView extends ViewPart {
 				System.out.println(comboSpeed.getItem(comboSpeed.getSelectionIndex()));
 			}
 		});
-
-
-		// Button to start the Animation
-		btnAnimate = new Button(compositeOptions, SWT.NONE);
-		formToolkit.adapt(btnAnimate, true, true);
-		btnAnimate.setText("Atart Animation");
-		btnAnimate.addSelectionListener(new SelectionListener() {
-			public void widgetSelected(SelectionEvent event) {
-				animate = !animate;
-				animateTimlineLayers();
-			}
-			public void widgetDefaultSelected(SelectionEvent event) {
-				animate = !animate;
-				animateTimlineLayers();
-			}
-		});
+				new Label(compositeOptions, SWT.NONE);
+		
+		
+				// Button to start the Animation
+				btnAnimate = new Button(compositeOptions, SWT.NONE);
+				btnAnimate.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
+				formToolkit.adapt(btnAnimate, true, true);
+				btnAnimate.setText("Atart Animation");
+				btnAnimate.addSelectionListener(new SelectionListener() {
+					public void widgetSelected(SelectionEvent event) {
+						animate = !animate;
+						animateTimlineLayers();
+					}
+					public void widgetDefaultSelected(SelectionEvent event) {
+						animate = !animate;
+						animateTimlineLayers();
+					}
+				});
 	}
 
 	public void setFocus() {
 
 	}
-	
+
 	/**
 	 * Loads single File to the Layertable
 	 */
 	private void loadButtonClicked() {
-		
-		TimeSeriesLayer analyticSurfaceLayer = new TimeSeriesLayer();
-        analyticSurfaceLayer.setPickEnabled(false);
 
-        worldview.insertBeforePlacenames(analyticSurfaceLayer);
-		GeoTiffParser.createSurface(txtGeoTiffsurl.getText(), analyticSurfaceLayer);
-		
-		addLayerToTable(analyticSurfaceLayer);
+		TimeSeriesLayer layer = new TimeSeriesLayer();
+		layer.setPickEnabled(false);
+		// set the altitude model
+		layer.setValue("AltitudeModel", altitudeModel);
+		worldview.insertBeforePlacenames(layer);
+		GeoTiffParser.createSurface(txtGeoTiffsurl.getText(), layer);
+
+		addLayerToTable(layer);
 	}
-	
+
 	/**
 	 * Loads a bulk of Files from a given Folder
 	 */
@@ -287,18 +320,18 @@ public class GeoTifView extends ViewPart {
 			File f = listOfFiles[i];
 			if (f.isFile()) {
 				TimeSeriesLayer analyticSurfaceLayer = new TimeSeriesLayer();
-		        analyticSurfaceLayer.setPickEnabled(false);
+				analyticSurfaceLayer.setPickEnabled(false);
 
-		        worldview.insertBeforePlacenames(analyticSurfaceLayer);
+				worldview.insertBeforePlacenames(analyticSurfaceLayer);
 				GeoTiffParser.createSurface(f.getPath(), analyticSurfaceLayer);
-				
+
 				addLayerToTable(analyticSurfaceLayer);
-				
-//				System.out.println("File " + (f.getPath()));
+
+				//				System.out.println("File " + (f.getPath()));
 			}
 		}
 	}
-	
+
 	/**
 	 * Add the given Layer to the LayersTable and update Scale Maximum
 	 * @param layer
@@ -309,11 +342,11 @@ public class GeoTifView extends ViewPart {
 		layers.setChecked(layer, layer.isEnabled());
 		TableItem item = layers.getTable().getItem(layers.getTable().getItems().length-1);
 		item.setText(layer.getName());
-		
+
 		scale.setMaximum(layers.getTable().getItems().length);
 		scale.setEnabled(true);
 	}
-	
+
 	/**
 	 * Updates the Layer Table and Scale when the Up-Button is clicked
 	 */
@@ -374,7 +407,7 @@ public class GeoTifView extends ViewPart {
 		}
 
 	}
-	
+
 	/**
 	 * Shows each TimelineLayer for a specific time
 	 */
