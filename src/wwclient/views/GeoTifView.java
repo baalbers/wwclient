@@ -319,13 +319,14 @@ public class GeoTifView extends ViewPart {
 		for (int i = 0; i < listOfFiles.length; i++) {
 			File f = listOfFiles[i];
 			if (f.isFile()) {
-				TimeSeriesLayer analyticSurfaceLayer = new TimeSeriesLayer();
-				analyticSurfaceLayer.setPickEnabled(false);
+				TimeSeriesLayer layer = new TimeSeriesLayer();
+				layer.setPickEnabled(false);
+				// set the altitude model
+				layer.setValue("AltitudeModel", altitudeModel);
+				worldview.insertBeforePlacenames(layer);
+				GeoTiffParser.createSurface(f.getPath(), layer);
 
-				worldview.insertBeforePlacenames(analyticSurfaceLayer);
-				GeoTiffParser.createSurface(f.getPath(), analyticSurfaceLayer);
-
-				addLayerToTable(analyticSurfaceLayer);
+				addLayerToTable(layer);
 
 				//				System.out.println("File " + (f.getPath()));
 			}
