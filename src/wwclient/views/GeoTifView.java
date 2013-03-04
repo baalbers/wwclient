@@ -51,12 +51,15 @@ public class GeoTifView extends ViewPart {
 
 	private Section sctnGetGeoTif;
 	private Text txtGeoTiffsurl;
+	
+	private Button btnRemoveSelectedLayer;
+	private Button btnRemoveAllLayer;
 
 	private Combo comboAltitudeModel;
 	private int altitudeModel;		// holds the selected AltitudeModel for the loaded Layer
 
 	private Scale scale;			// scale to navigate between the timeseries layer
-	private Label lblSelectLayer;	// shows the selected TimeseriesLayer
+	private Label lblSelectedLayer;	// shows the selected TimeseriesLayer
 	// animation stuff
 	private Button btnAnimate;
 	private Button btnPauseAnimation;
@@ -158,23 +161,61 @@ public class GeoTifView extends ViewPart {
 
 		Composite compositeLayers = formToolkit.createComposite(sctnLayer);
 		TableWrapLayout layoutLayers = new TableWrapLayout();
-		layoutLayers.numColumns = 2;
+		layoutLayers.numColumns = 3;
 		compositeLayers.setLayout(layoutLayers);
 		TableWrapData td = new TableWrapData(TableWrapData.FILL_GRAB);
-		td.colspan = 2;
+		td.colspan = 3;
 		Table tableLayers = formToolkit.createTable(compositeLayers, SWT.CHECK | SWT.BORDER | SWT.H_SCROLL | SWT.V_SCROLL);
 		tableLayers.setLayoutData(td);
 
 		sctnLayer.setClient(compositeLayers);
 
 		layers = new CheckboxTableViewer(tableLayers);
-		// wird ausgef�hrt wenn ein Layer ausgew�hlt wird
+		
+		btnRemoveSelectedLayer = new Button(compositeLayers, SWT.NONE);
+		formToolkit.adapt(btnRemoveSelectedLayer, true, true);
+		btnRemoveSelectedLayer.setText("Remove selected Layers");
+		// enabled when a layer is selected!
+		btnRemoveSelectedLayer.setEnabled(false);
+		btnRemoveSelectedLayer.addSelectionListener(new SelectionListener() {
+			public void widgetSelected(SelectionEvent event) {
+				Object[] elems = layers.getCheckedElements();
+				removeLayers(elems);
+			}
+			public void widgetDefaultSelected(SelectionEvent event) {
+				Object[] elems = layers.getCheckedElements();
+				removeLayers(elems);
+			}
+		});
+		
+		btnRemoveAllLayer = new Button(compositeLayers, SWT.NONE);
+		formToolkit.adapt(btnRemoveAllLayer, true, true);
+		btnRemoveAllLayer.setText("Remove all Layers");
+		// enable when there are any layers
+		btnRemoveAllLayer.setEnabled(false);
+		btnRemoveAllLayer.addSelectionListener(new SelectionListener() {
+			public void widgetSelected(SelectionEvent event) {
+				layers.setAllChecked(true);
+				Object[] elems = layers.getCheckedElements();
+				removeLayers(elems);
+			}
+
+			public void widgetDefaultSelected(SelectionEvent event) {
+				layers.setAllChecked(true);
+				Object[] elems = layers.getCheckedElements();
+				removeLayers(elems);
+			}
+		});
+		
+		// executed when a layer is selected in the layers table
 		layers.addCheckStateListener(new ICheckStateListener() {
 			public void checkStateChanged(CheckStateChangedEvent event) {
 				TimeSeriesLayer layer = (TimeSeriesLayer) event.getElement();
 				layer.setEnabled(event.getChecked());
 				// repaint globe
 				worldview.repaint();
+				// enable removing layer
+				btnRemoveSelectedLayer.setEnabled(true);
 			}
 		});
 
@@ -205,8 +246,8 @@ public class GeoTifView extends ViewPart {
 			}
 		});
 
-		lblSelectLayer = formToolkit.createLabel(compositeControls, "Selected Layer:", SWT.NONE);
-		lblSelectLayer.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
+		lblSelectedLayer = formToolkit.createLabel(compositeControls, "Selected Layer:", SWT.NONE);
+		lblSelectedLayer.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
 		new Label(compositeControls, SWT.NONE);
 
 
@@ -344,8 +385,6 @@ public class GeoTifView extends ViewPart {
 				GeoTiffParser.createSurface(f.getPath(), layer);
 
 				addLayerToTable(layer);
-
-				//				System.out.println("File " + (f.getPath()));
 			}
 		}
 	}
@@ -363,6 +402,32 @@ public class GeoTifView extends ViewPart {
 
 		scale.setMaximum(layers.getTable().getItems().length);
 		scale.setEnabled(true);
+		
+		btnRemoveAllLayer.setEnabled(true);
+	}
+	
+	/**
+	 * 
+	 * @param elems
+	 */
+	private void removeLayers(Object[] layerlist) {
+		// remove each Layer from the WorldWind Model
+		for(Object o : layerlist) {
+			TimeSeriesLayer l = (TimeSeriesLayer) o;
+			worldview.getLayers().remove(l);
+		}
+		// and remove them from the layers table
+		layers.remove(layerlist);
+		// update gui
+		int length = layers.getTable().getItems().length;
+		scale.setMaximum(length);
+		btnRemoveSelectedLayer.setEnabled(false);
+		// when there are no more layers
+		if (length <= 0) {
+			scale.setEnabled(false);
+			btnRemoveAllLayer.setEnabled(false);
+			lblSelectedLayer.setText("Selected Layer: None");
+		}
 	}
 
 	/**
@@ -415,12 +480,12 @@ public class GeoTifView extends ViewPart {
 		if(realselection <= timelineLayers.size()-1 && realselection >= 0) {
 			TimeSeriesLayer l = timelineLayers.get(realselection);
 			l.setEnabled(true);
-			lblSelectLayer.setText("Selected Layer: "+l.getName());
+			lblSelectedLayer.setText("Selected Layer: "+l.getName());
 			layers.setChecked(l, true);
 			worldview.repaint();
 			// when there is no layer to show
 		} else {
-			lblSelectLayer.setText("Selected Layer: None");
+			lblSelectedLayer.setText("Selected Layer: None");
 		}
 
 	}
@@ -429,23 +494,33 @@ public class GeoTifView extends ViewPart {
 	 * Shows each TimelineLayer for a specific time
 	 */
 	private void animateTimlineLayers() {
-		if(animate) {
-			btnPauseAnimation.setEnabled(true);
-			btnAnimate.setText("Stop Animation");
-			LayerList layerList = worldview.getLayers();
-			for (int j = 0; j < layerList.size(); j++) {
-				if (layerList.get(j).getValue("isTimelineLayer") != null) {
-					overlay.add((TimeSeriesLayer) layerList.get(j));
+		// only animate layers when there are any!
+		if(layers.getTable().getItems().length > 0) {
+			if(animate) {
+				btnPauseAnimation.setEnabled(true);
+				btnAnimate.setText("Stop Animation");
+				LayerList layerList = worldview.getLayers();
+				// Get all TimeLineLayers from WorldWind
+				for (int j = 0; j < layerList.size(); j++) {
+					if (layerList.get(j).getValue("isTimelineLayer") != null) {
+						// and add them to the TimeLoopOverlay Layer
+						overlay.add((TimeSeriesLayer) layerList.get(j));
+					}
 				}
-			}
-			overlay.setEnabled(true);
-		} else {
-			btnPauseAnimation.setEnabled(false);
-			btnAnimate.setText("Start Animation");
-			overlay.stop();
-		}		
+				// start animation
+				overlay.setEnabled(true);
+				lblSelectedLayer.setText("Selected Layer: Animating all Layers");
+			} else { // stop animation
+				btnPauseAnimation.setEnabled(false);
+				btnAnimate.setText("Start Animation");
+				overlay.stop();
+			}	
+		}
 	}
 	
+	/**
+	 * Pause Animation
+	 */
 	private void pauseAnimation() {
 		if(paused) {
 			overlay.pause();
