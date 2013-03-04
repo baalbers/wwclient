@@ -288,7 +288,7 @@ public class GeoTifView extends ViewPart {
 		 */
 		// Set up the Animation Layer for WorldWind
 		worldview = (WorldWindAWTViewPart) Activator.getView(getViewSite().getWorkbenchWindow(), WorldWindAWTViewPart.ID);
-		overlay = new TimeLoopOverlay("Animated Layer", worldview.getWorldWindow(), 80);
+//		overlay = new TimeLoopOverlay("Animated Layer", worldview.getWorldWindow(), 80);
 
 		Section sctnOptions = formToolkit.createSection(form.getBody(), Section.TWISTIE | Section.TITLE_BAR | Section.EXPANDED);
 		sctnOptions.setLayoutData(new TableWrapData(TableWrapData.FILL_GRAB, TableWrapData.TOP, 1, 1));
@@ -309,7 +309,7 @@ public class GeoTifView extends ViewPart {
 		comboSpeed.select(8);
 		comboSpeed.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				overlay = new TimeLoopOverlay("Animated Layer", worldview.getWorldWindow(), Integer.valueOf(comboSpeed.getItem(comboSpeed.getSelectionIndex())));
+//				overlay = new TimeLoopOverlay("Animated Layer", worldview.getWorldWindow(), Integer.valueOf(comboSpeed.getItem(comboSpeed.getSelectionIndex())));
 				System.out.println(comboSpeed.getItem(comboSpeed.getSelectionIndex()));
 			}
 		});
@@ -415,6 +415,7 @@ public class GeoTifView extends ViewPart {
 		for(Object o : layerlist) {
 			TimeSeriesLayer l = (TimeSeriesLayer) o;
 			worldview.getLayers().remove(l);
+			
 		}
 		// and remove them from the layers table
 		layers.remove(layerlist);
@@ -490,6 +491,7 @@ public class GeoTifView extends ViewPart {
 
 	}
 
+	private boolean btnRemoveSelectedLayersState;	// used to check if button should be enabled again
 	/**
 	 * Shows each TimelineLayer for a specific time
 	 */
@@ -497,6 +499,9 @@ public class GeoTifView extends ViewPart {
 		// only animate layers when there are any!
 		if(layers.getTable().getItems().length > 0) {
 			if(animate) {
+				// TEST TODO
+				overlay = new TimeLoopOverlay("Animated Layer", worldview.getWorldWindow(), Integer.valueOf(comboSpeed.getItem(comboSpeed.getSelectionIndex())));
+				// TEST END
 				btnPauseAnimation.setEnabled(true);
 				btnAnimate.setText("Stop Animation");
 				LayerList layerList = worldview.getLayers();
@@ -510,10 +515,20 @@ public class GeoTifView extends ViewPart {
 				// start animation
 				overlay.setEnabled(true);
 				lblSelectedLayer.setText("Selected Layer: Animating all Layers");
+				// update gui
+				btnRemoveSelectedLayersState = btnRemoveSelectedLayer.getEnabled();
+				btnRemoveSelectedLayer.setEnabled(false);
+				btnRemoveAllLayer.setEnabled(false);
+				
 			} else { // stop animation
 				btnPauseAnimation.setEnabled(false);
 				btnAnimate.setText("Start Animation");
 				overlay.stop();
+				overlay = null;
+				
+				// update gui
+				btnRemoveSelectedLayer.setEnabled(btnRemoveSelectedLayersState);
+				btnRemoveAllLayer.setEnabled(true);
 			}	
 		}
 	}
