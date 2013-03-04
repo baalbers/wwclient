@@ -59,8 +59,10 @@ public class GeoTifView extends ViewPart {
 	private Label lblSelectLayer;	// shows the selected TimeseriesLayer
 	// animation stuff
 	private Button btnAnimate;
+	private Button btnPauseAnimation;
 	private Combo comboSpeed;
 	private boolean animate = false;
+	private boolean paused = false;
 	private TimeLoopOverlay overlay;
 
 
@@ -270,24 +272,39 @@ public class GeoTifView extends ViewPart {
 				System.out.println(comboSpeed.getItem(comboSpeed.getSelectionIndex()));
 			}
 		});
-				new Label(compositeOptions, SWT.NONE);
-		
-		
-				// Button to start the Animation
-				btnAnimate = new Button(compositeOptions, SWT.NONE);
-				btnAnimate.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-				formToolkit.adapt(btnAnimate, true, true);
-				btnAnimate.setText("Atart Animation");
-				btnAnimate.addSelectionListener(new SelectionListener() {
-					public void widgetSelected(SelectionEvent event) {
-						animate = !animate;
-						animateTimlineLayers();
-					}
-					public void widgetDefaultSelected(SelectionEvent event) {
-						animate = !animate;
-						animateTimlineLayers();
-					}
-				});
+
+
+		// Button to start the Animation
+		btnAnimate = new Button(compositeOptions, SWT.NONE);
+		btnAnimate.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
+		formToolkit.adapt(btnAnimate, true, true);
+		btnAnimate.setText("Start Animation");
+		btnAnimate.addSelectionListener(new SelectionListener() {
+			public void widgetSelected(SelectionEvent event) {
+				animate = !animate;
+				animateTimlineLayers();
+			}
+			public void widgetDefaultSelected(SelectionEvent event) {
+				animate = !animate;
+				animateTimlineLayers();
+			}
+		});
+
+		btnPauseAnimation = new Button(compositeOptions, SWT.NONE);
+		btnPauseAnimation.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
+		formToolkit.adapt(btnPauseAnimation, true, true);
+		btnPauseAnimation.setText("Pause Animation");
+		btnPauseAnimation.setEnabled(false);
+		btnPauseAnimation.addSelectionListener(new SelectionListener() {
+			public void widgetSelected(SelectionEvent event) {
+				paused = !paused;
+				pauseAnimation();
+			}
+			public void widgetDefaultSelected(SelectionEvent event) {
+				paused = !paused;
+				pauseAnimation();
+			}
+		});
 	}
 
 	public void setFocus() {
@@ -395,7 +412,6 @@ public class GeoTifView extends ViewPart {
 			}
 		}
 		// check if there is a layer to show
-		System.out.println("Show layer nr.: "+ realselection+" timelinelayers.size: "+timelineLayers.size());
 		if(realselection <= timelineLayers.size()-1 && realselection >= 0) {
 			TimeSeriesLayer l = timelineLayers.get(realselection);
 			l.setEnabled(true);
@@ -414,6 +430,7 @@ public class GeoTifView extends ViewPart {
 	 */
 	private void animateTimlineLayers() {
 		if(animate) {
+			btnPauseAnimation.setEnabled(true);
 			btnAnimate.setText("Stop Animation");
 			LayerList layerList = worldview.getLayers();
 			for (int j = 0; j < layerList.size(); j++) {
@@ -423,8 +440,19 @@ public class GeoTifView extends ViewPart {
 			}
 			overlay.setEnabled(true);
 		} else {
+			btnPauseAnimation.setEnabled(false);
 			btnAnimate.setText("Start Animation");
 			overlay.stop();
 		}		
+	}
+	
+	private void pauseAnimation() {
+		if(paused) {
+			overlay.pause();
+			btnPauseAnimation.setText("Animation Paused");
+		} else {
+			overlay.resume();
+			btnPauseAnimation.setText("Pause Animation");
+		}
 	}
 }

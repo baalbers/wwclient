@@ -42,9 +42,6 @@ public class TimeLoopOverlay extends RenderableLayer implements OverlayListener 
     	overlay.addOverlayListener(this);
     	this.overlays.add(overlay);
     	
-    	//TODO?
-    	// adding overlay to canvas so it renders itself
-    	// but it was already added to overlay before 
     }
     
     public synchronized void setVisible(TimeSeriesLayer layer, boolean visible) {
@@ -94,7 +91,8 @@ public class TimeLoopOverlay extends RenderableLayer implements OverlayListener 
     }
     
     public void resume() {
-    	play();
+    	//play();
+    	if(worker != null) worker.resume();
     }
     
     // Thread to control animation by manipulating layer visibility
@@ -113,12 +111,14 @@ public class TimeLoopOverlay extends RenderableLayer implements OverlayListener 
     	private long interval = 50000;
     	// animation speed: 0..100
     	private int speed;
+    	private boolean paused = false;
     	private boolean done = false;
     	
     	public Worker(CopyOnWriteArrayList<TimeSeriesLayer> overlays, WorldWindowGLCanvas canvas, int speed) {
     		this.overlays = overlays;
     		this.canvas = canvas;
     		this.speed = speed;
+    		
 		}
     	
     	@SuppressWarnings("unused")
@@ -148,7 +148,6 @@ public class TimeLoopOverlay extends RenderableLayer implements OverlayListener 
     			setAllEnabled(false);
     			
     			layer = overlays.get(visibleFrame);
-//    			System.out.println("Aktueller layer: "+layer.getName());
     			if (!hiddenOverlays.contains(layer)) {
     				
     				// make visible
@@ -158,6 +157,19 @@ public class TimeLoopOverlay extends RenderableLayer implements OverlayListener 
     				
     				try {
 		    			Thread.sleep(sleep);
+		    			// check if loop is paused
+	    				if(paused) {
+	    					while(paused) {
+	    						try {
+	    							// when paused sleep for 1 sec and check again if paused
+									Thread.sleep(1000);
+								} catch (InterruptedException e) {
+									done = true;
+									e.printStackTrace();
+								}
+	    					}
+	    				}
+		    			
 					} catch (InterruptedException e) {
 						done = true;
 					}
@@ -181,9 +193,26 @@ public class TimeLoopOverlay extends RenderableLayer implements OverlayListener 
     			overlay.setEnabled(enabled);
     		}
     	}
+		
+		/**
+		 * Pauses the Worker until resume() is called
+		 */
 		private synchronized void pause () {
-    		done = true;
+    		//done = true;
+			paused = true;
     	}
+		
+		/**
+		 * When 
+		 */
+		private synchronized void resume() {
+			if(paused) {
+				paused = false;
+			} else {
+				System.out.println("Worker not paused.");
+			}
+			
+		}
 
     	private synchronized void stop () {
     		// signal thread completion
